@@ -1,0 +1,77 @@
+<div class="row">
+  <div class="image-outer">
+  <div class="header-content">
+    <div class="name-inner">
+      <h3 class="name-text">OneSchool</h3>
+    </div>
+    <div class="header-contents-outer">
+      <h4 class="name-text" [style.padding-left.px]="140">Student - Program Management System</h4>
+    </div>
+    <div class="logout-inner">
+      <button mat-raised-button class="logout-button" (click)="logout()" aria-label="Example icon button with a logout icon">
+        Logout
+        <mat-icon>logout</mat-icon>
+      </button>
+    </div>
+
+  </div>
+  <div class="body-content">
+    <div class="data-inner">
+    <div class="students-content">
+      <div class="search-outer">
+        <div class="search-inner">
+          <div class="search-button-icon-inner"><i class="fa-brands fa-searchengin w3-xlarge search-icon"></i></div>
+          <div class="search-text-inner">
+            <form action="" [formGroup]="StudentsSearchForm">
+              <mat-form-field class="example-full-width" appearance="fill" [style.width.px]="450" [style.font-size.px]="4">
+                <input type="text" matInput formControlName="searchText" placeholder="Enter Search Text..." class="w3-large">
+              </mat-form-field>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="app-outer">
+      <div class="app-inner"><app-student [data]="managementService.dataListStudent"></app-student></div>
+      </div>
+      <div class="paginator-inner">
+        <mat-paginator [length]=managementService.dataCountStudent [pageSize]=pageSize [pageIndex]=page [pageSizeOptions]=pageSizeOptions  aria-label="Select Page" (page)="pageEvent=loadStudentsData($event)">
+
+        </mat-paginator>
+      </div>
+    </div>
+    <div class="programs-content">
+      <div class="search-outer">
+        <div class="search-inner">
+          <div class="search-button-icon-inner"><i class="fa-brands fa-searchengin w3-xlarge search-icon"></i></div>
+          <div class="search-text-inner">
+            <form action="" [formGroup]="ProgramsSearchForm">
+              <mat-form-field class="example-full-width" appearance="fill" [style.width.px]="450" [style.font-size.px]="4">
+                <input type="text" matInput formControlName="searchText" placeholder="Enter Search Text..." class="w3-large">
+              </mat-form-field>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="app-outer">
+        <div class="app-inner"><app-program [data]="managementService.dataListProgram"></app-program></div>
+        <div class="paginator-inner">
+          <mat-paginator [length]=managementService.dataCountProgram [pageSize]=pageSize [pageIndex]=page [pageSizeOptions]=pageSizeOptions  aria-label="Select Page" (page)="pageEvent=loadProgramsData($event)">
+
+          </mat-paginator>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="assign-button-inner">
+      <button mat-raised-button color="warn">Assign To Program</button>
+    </div>
+  </div>
+  <footer class="footer-content">
+    <div class="copyright-inner">
+      <div class="copyright-text">
+        <small>&copy;{{year}} All Rights Reserved</small>
+      </div>
+    </div>
+  </footer>
+  </div>
+</div>

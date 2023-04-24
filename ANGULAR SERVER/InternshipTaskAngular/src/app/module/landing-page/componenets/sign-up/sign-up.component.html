@@ -1,0 +1,33 @@
+<div class="sign-up-box-outer">
+  <div class="header-inner">Sign Up</div>
+  <div class="details-form-inner">
+    <form action="" [formGroup]="SignUpDetailsForm" (ngSubmit)="SignUp()">
+      <mat-form-field class="example-full-width" appearance="fill" [style.width.px]="400">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
+      </mat-form-field>
+      <br>
+
+      <mat-form-field class="example-full-width" appearance="fill" [style.width.px]="400">
+        <mat-label>Password</mat-label>
+        <mat-error>Minimum of 8 characters</mat-error>
+        <input type="password" matInput formControlName="password">
+      </mat-form-field>
+      <br>
+
+      <mat-form-field class="example-full-width" appearance="fill" [style.width.px]="400">
+        <mat-label>Re-enter Password</mat-label>
+        <mat-error>Passwords should match</mat-error>
+        <input type="password" matInput formControlName="Repassword">
+      </mat-form-field>
+      <br>
+
+      <button type="submit" mat-raised-button color="primary" [disabled]="SignUpDetailsForm?.invalid"> Sign Up</button>
+
+    </form>
+  </div>
+  <div class="other-auths-inner">
+    <button mat-raised-button color="primary" (click)="SignUpWithGoogle()"> Sign Up With Google</button>
+  </div>
+</div>
+

@@ -1,0 +1,187 @@
+.row{
+  height: 100%;
+  width: 1378px;
+  background: url("https://preview.colorlib.com/theme/oneschool/images/hero_1.jpg.webp") no-repeat  ;
+  background-size: cover;
+  overflow:hidden;
+}
+.image-outer{
+  height: 100%;
+  width: 1378px;
+  background-color: rgba(33, 37, 41, 0.9);
+  display: flex;
+  flex-direction: column;
+}
+.header-content{
+  height: 60px;
+  width: 1378px;
+  display: flex;
+  flex-direction: row;
+
+}
+.name-inner{
+  height: 100%;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.name-text{
+  text-align: center;
+  color: #fff;
+  background-color: transparent;
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 900;
+
+}
+.header-contents-outer{
+  height: 100%;
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.logout-inner{
+  height: 40px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.logout-button{
+  padding: 14px 20px;
+  color: #fff;
+  background: #7971ea;
+  height: 40px!important;
+  border-radius: 30px;
+  font-size: 1.4rem;
+  font-weight: 900;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body-content{
+  height: 550px;
+  width: 1378px;
+  border: 1px solid lavender;
+  display: flex;
+  flex-direction: column;
+}
+.data-inner{
+  height: 470px;
+  width: 1378px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.students-content{
+  height: 100%;
+  flex: 1;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.programs-content{
+  height: 100%;
+  flex: 1;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.search-outer{
+  height: 50px;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-inner{
+  height: 30px;
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.69);
+  display: flex;
+}
+.search-button-icon-inner{
+  height: 30px;
+  width: 60px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-text-inner{
+  height: 30px;
+  flex: 1;
+  display: flex;
+
+}
+.app-outer{
+  margin-top: 5px;
+  flex: 1;
+  width: 100%;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+}
+.app-inner{
+  height: 380px;
+  width: 100%;
+}
+app-student{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: auto auto auto;
+  overflow: scroll;
+  margin-right: 40px;
+}
+app-program{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: auto auto auto;
+  overflow: scroll;
+}
+.paginator-inner{
+  flex: 1;
+  width: 100%;
+  border: 1px solid #6969de;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+mat-paginator{
+  height: 50px;
+  border-radius: 30px;
+}
+.assign-button-inner{
+  flex: 1;
+  width: 1378px;
+  border: 1px solid purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-content{
+  flex: 1;
+  width: 1378px;
+}
+.copyright-inner{
+  height: 100%;
+  width: 1378px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+small{
+  color: #ffffff;
+  text-align: center;
+}

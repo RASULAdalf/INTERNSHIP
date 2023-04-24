@@ -1,0 +1,7 @@
+<div class="student-element" *ngFor="let data of data; index as num" #viewButton [attr.data-index]="num">
+  <div class="header"><h2>{{data?.name?.split(" ")[0]}}</h2></div>
+  <div class="image" ></div>
+  <div class="view-details">
+    <button color="primary" mat-raised-button (click)="openModal(viewButton)">VIEW</button>
+  </div>
+</div>
