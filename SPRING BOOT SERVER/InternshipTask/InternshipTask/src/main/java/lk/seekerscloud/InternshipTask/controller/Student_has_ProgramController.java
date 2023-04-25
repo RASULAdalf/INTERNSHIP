@@ -16,16 +16,7 @@ import javax.validation.constraints.Max;
 public class Student_has_ProgramController {
     @Autowired
     private Student_has_ProgramService student_has_programService;
-    @PostMapping
-    public ResponseEntity<StandardResponse> saveStudent_has_Program(@RequestBody Student_has_ProgramRequestDto dto){
-        return new ResponseEntity<StandardResponse>(new StandardResponse(201,"Student_has_ProgramSaved", student_has_programService.saveStudent_has_Program(dto)), HttpStatus.CREATED);
-    }
-
-    @PutMapping
-    public ResponseEntity<StandardResponse> updateStudent_has_Program(@RequestParam String id,@RequestBody Student_has_ProgramRequestDto dto){
-        return new ResponseEntity<>(new StandardResponse(200,"Student_has_Program Updated!", student_has_programService.updateStudent_has_Program(id,dto)),HttpStatus.OK);
-    }
-
+   
     @DeleteMapping
     public ResponseEntity<StandardResponse> deleteStudent_has_Program(@RequestParam String id){
         student_has_programService.deleteStudent_has_Program(id);
